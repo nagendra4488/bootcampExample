@@ -89,8 +89,13 @@ public class HRApp {
 	
    public void updateEmployee() {
 		
+	   
+	   System.out.println("Enter percent of slary to be increased ");
+		int value = sc.nextInt();
+		System.out.println("Enter Project of Employee to be incremented");
+		String prjct = sc.next();
 		
-		Employee employ = operations.updateEmployee();
+		Employee employ = operations.updateEmployee(value,prjct);
 		
 		System.out.println("After increment salary is "+employ.getSalary());
 		
@@ -100,6 +105,12 @@ public class HRApp {
 	public void displayEmployees() {
 		
 	 Employee[] arr= operations.displayEmployees();
+	 
+	 int index = operations.getIndex();
+	 
+   System.out.println(arr[index]);
+	 
+	// System.out.println(arr);
 	 
 	 for(int i=0;i<arr.length;i++) {
 		 if(arr[i]!=null) {

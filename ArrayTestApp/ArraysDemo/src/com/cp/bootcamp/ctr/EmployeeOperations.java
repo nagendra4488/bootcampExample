@@ -27,14 +27,11 @@ public class EmployeeOperations {
 		return e;
 	}
 	
-	public Employee updateEmployee() {
+	public Employee updateEmployee(int value,String prjct) {
 		
-		System.out.println("Enter percent of slary to be increased ");
-		int value = sc.nextInt();
-		System.out.println("Enter Project of Employee to be incremented");
-		String prjct = sc.next();
+		
 	//	System.out.println("Salary before Updation is "+emp.getSalary());
-		Employee em = new Employee();
+	//	Employee em = new Employee();
 		for (int i = 0; i < index; i++) {
 			
 			if(arr[i].getProject()==prjct) {
@@ -58,5 +55,15 @@ public class EmployeeOperations {
 		
 		return arr;
 	}
+
+	public static int getIndex() {
+		return index;
+	}
+
+	public static void setIndex(int index) {
+		EmployeeOperations.index = index;
+	}
+	
+	
 
 }
