@@ -108,15 +108,17 @@ public class HRApp {
 	 
 	 int index = operations.getIndex();
 	 
-   System.out.println(arr[index]);
-	 
-	// System.out.println(arr);
-	 
+   
 	
-	/*
-	 * for(int i=0;i<arr.length;i++) { if(arr[i]!=null) {
-	 * System.out.println(arr[i]); }}
-	 */ 	
+	
+	  for(int i=0;i<index;i++) {
+		 
+		  Employee e = arr[i];
+		  
+		  displayEmployeeDetails(e);
+		  
+	  }
+	  	
 		
 	}
 	

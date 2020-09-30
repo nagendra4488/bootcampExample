@@ -34,7 +34,7 @@ public class EmployeeOperations {
 	//	Employee em = new Employee();
 		for (int i = 0; i < index; i++) {
 			
-			if(arr[i].getProject()==prjct) {
+			if(arr[i].getProject().equals(prjct)) {
 			
 				
 				int sal = arr[i].getSalary();
